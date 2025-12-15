@@ -1,5 +1,11 @@
 import { Header } from "@/components/header";
 import "./globals.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Home - Aula Next JS do zero!',
+  description: 'Aprendendo Next JS do zero com o Sujeito Programador!'
+}
 
 export default function RootLayout({
   children,
