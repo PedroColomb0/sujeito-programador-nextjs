@@ -1,3 +1,5 @@
+import { Button } from "@/components/button";
+
 interface PostProps {
     id: number;
     title: string;
@@ -16,9 +18,20 @@ export default async function PostsPage() {
 
     console.log(data)
 
+    async function handleClick() {
+        'use server'
+        console.log("Teste")
+    }
+
     return(
         <div>
             <h1>Todos os Posts</h1>
+
+            <Button/>
+
+            <button onClick={handleClick}>
+                Teste
+            </button>
 
             <div>
                 {data.posts.map(post => (
