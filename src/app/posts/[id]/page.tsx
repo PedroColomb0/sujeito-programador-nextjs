@@ -13,7 +13,7 @@ export default async function DetailPost({
     return(
         <div>
             <h1>Detalhes do post: id</h1>
-            <Suspense>
+            <Suspense fallback={<h1>Carregandoooo.....</h1>}> 
                 <PostInfo/> 
             </Suspense>
         </div>
