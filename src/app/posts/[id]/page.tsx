@@ -1,3 +1,6 @@
+import { Suspense } from "react";
+import { PostInfo } from "./components/post";
+
 export default async function DetailPost({
     params
 } : {
@@ -10,6 +13,9 @@ export default async function DetailPost({
     return(
         <div>
             <h1>Detalhes do post: id</h1>
+            <Suspense>
+                <PostInfo/> 
+            </Suspense>
         </div>
     )
 }
